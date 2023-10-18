@@ -1,1 +1,9 @@
-# best_UTILS
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Привет, мир!");
+    }
+}
