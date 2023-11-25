@@ -24,3 +24,9 @@ strings file
 # Разархивировать 
 
  7z x application.zip  
+
+# кодировка base64
+
+base64 -d (file.txt или стандартный вывод)
+
+
