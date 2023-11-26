@@ -30,3 +30,7 @@ strings file
 base64 -d (file.txt или стандартный вывод)
 
 
+# маленький броузер
+
+curl -s http://10.10.10.150/secret.txt | base64 -d
+
