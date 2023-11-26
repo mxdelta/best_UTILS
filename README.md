@@ -29,6 +29,13 @@ strings file
 
 base64 -d (file.txt или стандартный вывод)
 
+# перевод в 16 формат
+
+cat password_backup | xxd > bak
+ 
+ и обратно
+ 
+cat password_backup | xxd -r > bak
 
 # маленький броузер
 
