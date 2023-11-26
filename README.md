@@ -59,7 +59,9 @@ file bak.out
 
 tar xf bak.out
 
-# утилита шифрования
+# утилита шифрования openssl
 
-openssl pkcs12 -in legacyy_dev_auth.pfx -nocerts -out key.pem -nodes  (рашифровывает формат pfx)
+openssl pkcs12 -in legacyy_dev_auth.pfx -nocerts -out key.pem -nodes  (рашифровывает формат pfx)  (извлечение ключей)
+
+openssl pkcs12 -in legacyy_dev_auth.pfx -nokeys -out cert.pem (извлечение сертификата windows)
 
