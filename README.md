@@ -59,4 +59,7 @@ file bak.out
 
 tar xf bak.out
 
+# утилита шифрования
+
+openssl pkcs12 -in legacyy_dev_auth.pfx -nocerts -out key.pem -nodes  (рашифровывает формат pfx)
 
