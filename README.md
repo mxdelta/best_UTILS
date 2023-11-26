@@ -41,3 +41,22 @@ cat password_backup | xxd -r > bak
 
 curl -s http://10.10.10.150/secret.txt | base64 -d
 
+# Архиваторы
+
+bzip2 -d bak
+
+file bak.out
+
+mv bak.out bak.gz
+
+gzip -d bak.gz
+
+file bak
+
+bzip2 -d bak
+
+file bak.out
+
+tar xf bak.out
+
+
