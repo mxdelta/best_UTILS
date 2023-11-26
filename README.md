@@ -65,3 +65,6 @@ openssl pkcs12 -in legacyy_dev_auth.pfx -nocerts -out key.pem -nodes  (раши�
 
 openssl pkcs12 -in legacyy_dev_auth.pfx -nokeys -out cert.pem (извлечение сертификата windows)
 
+# просмотр всех каталогов и файлов в том числе скрытых Windows
+
+gci -force .
