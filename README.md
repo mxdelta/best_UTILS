@@ -70,3 +70,9 @@ openssl pkcs12 -in legacyy_dev_auth.pfx -nokeys -out cert.pem (извлечен�
 # просмотр всех каталогов и файлов в том числе скрытых Windows
 
 gci -force .
+
+# Docker
+
+dive docker-archive://image.tar
+
+
