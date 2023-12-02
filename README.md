@@ -57,7 +57,9 @@ bzip2 -d bak
 
 file bak.out
 
-tar xf bak.out
+tar -xvf bak.out (извлечение)
+
+tar -tvf bak.out (просмотр)
 
 # утилита шифрования openssl
 
