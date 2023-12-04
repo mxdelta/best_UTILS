@@ -78,4 +78,8 @@ gci -force .
 
 dive docker-archive://image.tar
 
+# AWK 
+
+cat passwd | awk '{ print $1 }' > users
+cat passwd | awk '{ print $3 }' > passwords
 
