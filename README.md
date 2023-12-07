@@ -16,6 +16,10 @@ du -hs *
 
 binwalk -e king   
 
+# Подсчет символов в стандартном вводе
+
+grep qwerty | wc -c ---> 6
+
 # метаданные
 
 exiftool file
