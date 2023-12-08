@@ -87,3 +87,4 @@ dive docker-archive://image.tar
 cat passwd | awk '{ print $1 }' > users
 cat passwd | awk '{ print $3 }' > passwords
 
+cat hash.txt | awk -F: {'print $1'}
