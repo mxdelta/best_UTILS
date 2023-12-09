@@ -95,3 +95,8 @@ cat hash.txt | awk -F: {'print $1'}
     sudo mount -t cifs -o 'user=r.thompson,password=rY4n5eva' //10.10.10.182/Data /mnt/data/
 
 cifs - Common Internet File System
+
+# FIND
+
+    find . -type f
+    
