@@ -119,4 +119,6 @@ ssh 10.10.14.7@10.10.10.119 "/usr/sbin/tcpdump -i lo -U -s0 -w - 'not port 22'" 
 
 echo “${IFS}test”
 
+ip${IFS}a;
+
 {echo,test}
