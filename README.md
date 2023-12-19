@@ -122,3 +122,5 @@ echo “${IFS}test”
 ip${IFS}a;
 
 {echo,test}
+
+echo "pind -c 1 10.10.10.10" | sed 's/  /${IFS}/g'   ---> установка вместо пробелов ${IFS}
