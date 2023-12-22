@@ -127,3 +127,10 @@ ip${IFS}a;
 {echo,test}
 
 echo "pind -c 1 10.10.10.10" | sed 's/  /${IFS}/g'   ---> установка вместо пробелов ${IFS}
+
+# bash
+
+--циклы
+    for i in $(seq 0 9999); do
+    echo $i;
+    done
