@@ -15,6 +15,10 @@ find . -type f -ls
 
 grep -Ri password .
 
+# поиск процессов для lexi
+
+ps -ef | grep lexi
+
 # Размер директорий с содержимым Linux
 
 du -hs *
