@@ -13,7 +13,7 @@ class Program
 find . -type f -ls
 # Поиск строк из файлов в текущей дирктории 
 
-grep -R password .
+grep -Ri password .
 
 # Размер директорий с содержимым Linux
 
