@@ -47,6 +47,10 @@ strings file
 
 base64 -d (file.txt или стандартный вывод)
 
+    (обфускация команд)
+
+echo "ping -n 1 10.10.14.4" | iconv -t UTF16LE | base64 -w 0
+
 # перевод в 16 формат
 
 cat password_backup | xxd > bak
