@@ -16,11 +16,11 @@ find . -type f -ls
 
 Поиск password в текущей директории
 
-grep -Ri password .  
+	grep -Ri password .  
 
 Поиск симоволов длинной 32 бита от a-z и от 0-9
 
-grep -a '[a-z0-9]\{32\}' /dev/sdb
+	grep -a '[a-z0-9]\{32\}' /dev/sdb
 
 # поиск процессов для lexi
 
