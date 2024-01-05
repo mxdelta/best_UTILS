@@ -12,7 +12,13 @@ class Program
 
 find . -type f -ls
 
-# GREEP
+# GREP
+
+Поиск и вырезание слов из файла
+
+ 	grep "Up" file.txt | cur -d " " -f2
+
+ (разделитель - пробел 2-й абзац)
 
 Поиск password в текущей директории
 
