@@ -27,6 +27,12 @@ find . -type f -ls
 Поиск симоволов длинной 32 бита от a-z и от 0-9
 
 	grep -a '[a-z0-9]\{32\}' /dev/sdb
+# AWK 
+
+cat passwd | awk '{ print $1 }' > users
+cat passwd | awk '{ print $3 }' > passwords
+
+cat hash.txt | awk -F: {'print $1'}
 
 # поиск процессов для lexi
 
@@ -117,12 +123,6 @@ gci -force .
 
 dive docker-archive://image.tar
 
-# AWK 
-
-cat passwd | awk '{ print $1 }' > users
-cat passwd | awk '{ print $3 }' > passwords
-
-cat hash.txt | awk -F: {'print $1'}
 
 # Монтирование удаленной файловой системы к текущей файловой системе
 
