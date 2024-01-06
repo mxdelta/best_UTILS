@@ -4,7 +4,7 @@
  --------------------------------
  	grep "Up" pingsweep.gnmap | cut -d " " -f2 > targets.txt
  --------------------------------
-  	sudo nmap -Pn -n -sV -A -p 22,25,53,80,443,445,1433,3306,3389,5800,5900,8080,8443 -iL hosts/targets.txt -oA services/quick-sweep
+  	sudo nmap -Pn -n -sV -A -p 22,25,53,80,443,445,1433,3306,3389,5800,5900,8080,8443 -iL hosts/targets.txt -oA services/quick-sweep --min-rate 1240 --min-hostgroup 50
 --------------------------------
 	
 --------------------------------
