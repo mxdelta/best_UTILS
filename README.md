@@ -1,10 +1,14 @@
 # NMAP
 	
  	fping -ag 192.168.50.1/24 2>/dev/null
- 
- 	nmap -Pn -n -p 22,25,53,80,443,445,1433,3306,3389,5800,5900,8080,8443 -iL hosts/targets.txt -oA services/quick-sweep
-
-	grep "Up" pingsweep.gnmap | cut -d " " -f2 > targets.txt
+ --------------------------------
+ 	grep "Up" pingsweep.gnmap | cut -d " " -f2 > targets.txt
+ --------------------------------
+  	nmap -Pn -n -p 22,25,53,80,443,445,1433,3306,3389,5800,5900,8080,8443 -iL hosts/targets.txt -oA services/quick-sweep
+--------------------------------
+	
+--------------------------------
+	nmap -Pn -n -iL hosts/targets.txt -p 0-65535 -sV -A -oA services/full-sweep --min-rate 50000 --min-hostgroup 22
 
 
 using System;
