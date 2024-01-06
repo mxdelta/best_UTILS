@@ -1,5 +1,8 @@
 # NMAP
-	nmap -Pn -n -p 22,25,53,80,443,445,1433,3306,3389,5800,5900,8080,8443 -iL hosts/targets.txt -oA services/quick-sweep
+	
+ 	fping -ag 192.168.50.1/24 2>/dev/null
+ 
+ 	nmap -Pn -n -p 22,25,53,80,443,445,1433,3306,3389,5800,5900,8080,8443 -iL hosts/targets.txt -oA services/quick-sweep
 
 using System;
 
