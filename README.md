@@ -59,6 +59,8 @@ du -hs *
 
 binwalk -e king   
 
+binwalk --dd='.*' music.mp3
+
 # Подсчет символов в стандартном вводе
 
 grep qwerty | wc -c ---> 6
