@@ -143,8 +143,8 @@ dive docker-archive://image.tar
 
     mkdir /mnt/data/
     sudo mount -t cifs -o 'user=r.thompson,password=rY4n5eva' //10.10.10.182/Data /mnt/data/
-    mkdir /mnt/data/
-    sudo mount -t cifs -o 'user=r.thompson,password=rY4n5eva' //10.10.10.182/Data /mnt/data/
+    sudo mount -t cifs '//10.10.10.103/Department Shares' /mnt/sizzle
+
 cifs - Common Internet File System
 
 # Монтирование гостевой операционки с дика VHD
