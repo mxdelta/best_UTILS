@@ -209,3 +209,6 @@ openssl req -new -key amanda.key -out amanda.csr
 --просмотреть сертификат
 
 openssl x509 -in amanda.cer -text
+
+# Разбить файл на строки длинной 120 символов
+	fold -w 120 icmp.ps1.b64 > tmp
