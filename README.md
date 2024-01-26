@@ -1,3 +1,7 @@
+# PERM SUID
+
+find / -perm -4000 2>/dev/null | xargs ls -la
+
 # NMAP
 	
  	fping -ag 192.168.50.1/24 2>/dev/null
