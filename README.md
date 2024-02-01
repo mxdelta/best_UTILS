@@ -35,7 +35,7 @@ find . -type f -ls
 
 ---- найти и передать на вход exiftool
 
-find . -type f -exec exiftool {} \;
+find . -type f -exec exiftool {} \\;
 
 
 # GREP
