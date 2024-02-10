@@ -2,7 +2,7 @@
 
 ./sucrack -a -w 20 -s 10 -u max -r file
 
-# PERM SUID
+# Find
 Поиск файлов со Suid
 	find / -perm -4000 2>/dev/null | xargs ls -la
 
