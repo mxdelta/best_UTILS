@@ -15,6 +15,10 @@
 Поиск и передать на вход exiftool
 	find . -type f -exec exiftool {} \\;
 
+# Передача на вход другой  комманде
+
+find . -type f -exec exiftool {} \\;
+
 # NMAP
 	
  	fping -ag 192.168.50.1/24 2>/dev/null
