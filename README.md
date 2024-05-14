@@ -86,6 +86,8 @@ grep qwerty | wc -c ---> 6
 
 strings file
 
+strings -n 8 backup.mdb > ../../dict.txt (отделить все что длиннее 8 символов)
+
 # кодировка base64
 
 base64 -d (file.txt или стандартный вывод)
