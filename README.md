@@ -2,6 +2,9 @@
 
 https://github.com/decalage2/oletools.git
 
+sudo -H pip install -U oletools
+
+olevba Currency\ Volume\ Report.xlsm 
 
 # БИНАРНЫЕ ФАЙЛЫ ПРОГРАМ
 
