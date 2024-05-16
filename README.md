@@ -1,3 +1,8 @@
+# БИНАРНЫЕ ФАЙЛЫ
+
+https://github.com/andrew-d/static-binaries/tree/master/binaries/linux/x86_64
+
+
 # SUCRACK
 
 ./sucrack -a -w 20 -s 10 -u max -r file
