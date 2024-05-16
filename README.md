@@ -1,4 +1,4 @@
-# Анализ microsoft exel fiels
+# Анализ microsoft script fiels
 
 https://github.com/decalage2/oletools.git
 
