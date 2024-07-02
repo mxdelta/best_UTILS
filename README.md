@@ -1,3 +1,7 @@
+# Запуск скрипта VBS
+
+	cscript run.vbs
+
 # Анализ microsoft script fiels
 
 https://github.com/decalage2/oletools.git
