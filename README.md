@@ -1,3 +1,8 @@
+#JQ 
+
+curl http://10.10.10.128:6666/proc | jq -r '.[] | "\(.Name) \(.Path)"'
+
+
 # Запуск скрипта VBS
 
 	cscript run.vbs
