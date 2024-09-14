@@ -25,6 +25,9 @@ https://github.com/andrew-d/static-binaries/tree/master/binaries/linux/x86_64
 ./sucrack -a -w 20 -s 10 -u max -r file
 
 # Find
+Просто поиск файлов игнорируя регисрт
+	find / -iname FileName
+
 Поиск файлов со Suid
 	find / -perm -4000 2>/dev/null | xargs ls -la
 
