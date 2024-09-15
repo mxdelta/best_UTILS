@@ -115,6 +115,8 @@ strings -n 8 backup.mdb > ../../dict.txt (отделить все что дли�
 
 # кодировка base64
 
+	 echo -n "MIIRPQIBAzCCEPcGCSqGSIb3DQEHAaCCEOgEghDkMIIQ4DCCBxcGCSqGSIb3DQEHBqCCBwgwggcEAgEAMI<SNIP>U6EWbi/ttH4BAjUKtJ9ygRfRg==" | base64 -d > ws01.pfx (так перевели сертификат из base64 в pfx)
+
 	--- кодирование в бейз64 без разрыва строк и копироване в буферобмена
  
 base64 -w0 Shell.dll | xclip -selection clipboard
