@@ -1,3 +1,8 @@
+# Описание всех утилит 
+
+	https://lolbas-project.github.io/lolbas/Binaries/Certutil/#download
+
+
 # Прочитать qr code
 
 	zbarimg freelancer.png 
