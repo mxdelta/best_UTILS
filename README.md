@@ -1,3 +1,7 @@
+# Создание ntlm хеша
+
+	pypykatz crypto nt 'B3thR!ch@rd$'
+
 # Описание всех утилит 
 
 	https://lolbas-project.github.io/lolbas/Binaries/Certutil/#download
