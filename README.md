@@ -285,6 +285,9 @@ gpp-decrypt edBSHOwhZLTjt/QS9FeIcJ83mjWA98gw9guKOhJOdcqh+ZGMeXOsQbCpZ3xUjTLfCuNH
 	$link.save()
 
 
+**** https://github.com/Greenwolf/ntlm_theft  (для создания ярлыков)
+
+
 
 # Компиляция CS
 	и активация webdav https://gist.githubusercontent.com/klezVirus/af004842a73779e1d03d47e041115797/raw/29747c92ca04c844223d1ef6c1463d7e34e271ee/EtwStartWebClient.cs
