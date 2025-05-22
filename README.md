@@ -1,3 +1,9 @@
+# Запуск повер шелл скрипта с тем же имененем что и run.bat файл
+	#run.bat
+ 	@ECHO OFF
+	PowerShell.exe -exec bypass -w hidden -Command "& '%~dpn0.ps1'"
+	Exit
+
 # Создание ntlm хеша
 
 	pypykatz crypto nt 'B3thR!ch@rd$'
