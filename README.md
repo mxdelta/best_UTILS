@@ -301,7 +301,7 @@ gpp-decrypt edBSHOwhZLTjt/QS9FeIcJ83mjWA98gw9guKOhJOdcqh+ZGMeXOsQbCpZ3xUjTLfCuNH
 # GPG
 
 	нужны ключи их каталога /home/.gnupg
- 	.....
+ 	.....3B966A35D4A711F02F64B80E464133B0F0DBCB04.key
   	и шифрованный файл
    	keyvault.gpg
     затем 
